@@ -6,3 +6,7 @@ Install boost library  - sudo apt-get install libboost-all-dev
 After that execute "run.sh" script and it will build and run "radius_event_handler" program
 There is also udp_client program in corresponding folder. It can be used to generate two synthetic hardcoded RADIUS messages.
 To build the udp_client program just run make and after that execute it without parameters.
+
+Instruction on running docker image:
+1) Load image: sudo docker load < reh.tar.gz
+2) Create and run container: sudo docker run -t -d --name reh tim/radius_event_handler
