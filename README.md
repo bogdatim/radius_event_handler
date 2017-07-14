@@ -13,10 +13,7 @@ To build the udp_client program just run make and after that execute it without 
 Instruction on running docker image:
 1) Load image: sudo docker load < reh.tar.gz
 2) Create and run container:
-
-sudo docker run --net=host -t -d --name reh tim/radius_event_handler radius_event_handler --id=777 --own-addr=127.0.0.1:30001 --thrift-addr=127.0.0.1:7777
-
+    sudo docker run --net=host -t -d --name reh tim/radius_event_handler radius_event_handler --id=777 --own-addr=127.0.0.1:30001 --thrift-addr=127.0.0.1:7777
 3) If you want to access running container through Host interfaces add "--net=host" option to "docker run" command. It will link container ports with host ports:
-
-sudo docker run --net=host -t -d --name reh tim/radius_event_handler radius_event_handler --id=777 --own-addr=127.0.0.1:30001 --thrift-addr=127.0.0.1:7777
+    sudo docker run --net=host -t -d --name reh tim/radius_event_handler radius_event_handler --id=777 --own-addr=127.0.0.1:30001 --thrift-addr=127.0.0.1:7777
 
