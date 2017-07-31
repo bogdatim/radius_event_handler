@@ -11,7 +11,7 @@ There is also udp_client program in corresponding folder. It can be used to gene
 To build the udp_client program just run make and after that execute it without parameters.
 
 Instruction on running docker image:
-1) Load image: sudo docker load < reh.tar.gz
+1) Build docker image using Dockerfile from the project.
 2) Create and run container:
 
     sudo docker run --net=host -t -d --name reh tim/radius_event_handler radius_event_handler --id=777 --own-addr=127.0.0.1:30001 --thrift-addr=127.0.0.1:7777
