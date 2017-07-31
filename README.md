@@ -1,4 +1,4 @@
-# radius_event_handler - an RADIUS event receiver and handler
+# radius_event_handler - RADIUS event receiver and handler
 It receives RADIUS accounting messages (rfc2866) on UDP socket, extracts all AVPs and sends them to external server other UDP (server is not implemented yet).
 Note: The program can be built and run on Linux 64 bit OS only!
 
